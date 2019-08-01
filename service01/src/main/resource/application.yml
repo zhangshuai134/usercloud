@@ -1,0 +1,13 @@
+server:
+  port: 8001
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://192.168.0.110/mysql
+      username: root
+      password: root
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+
+
+

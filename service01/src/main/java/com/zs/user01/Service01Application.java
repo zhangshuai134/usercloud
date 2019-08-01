@@ -1,12 +1,12 @@
-package com.zs.user;
+package com.zs.user01;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class UserCloudApplication {
+public class Service01Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(UserCloudApplication.class,args);
+        SpringApplication.run(Service01Application.class,args);
     }
 }
