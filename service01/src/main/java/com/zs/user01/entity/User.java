@@ -14,8 +14,6 @@ public class User {
     private String id;
     @TableField("name")
     private String name;
-    private String sal;
-    private String job;
     private String email;
     private String phone;
 }
