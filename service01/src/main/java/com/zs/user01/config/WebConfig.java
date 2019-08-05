@@ -41,7 +41,7 @@ public class WebConfig {
         factory.setMaxFileSize(DataSize.ofMegabytes(20L));
         /// 设置总上传数据总大小
         factory.setMaxRequestSize(DataSize.ofMegabytes(20L));
-        factory.setLocation("/dianyi/data");
+        factory.setLocation("/");
         return factory.createMultipartConfig();
     }
 
