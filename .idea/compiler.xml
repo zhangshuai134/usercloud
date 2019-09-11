@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="service01" />
         <module name="service02" />
+        <module name="service03" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="service01" target="1.8" />
       <module name="service02" target="1.8" />
+      <module name="service03" target="1.8" />
       <module name="usercloud" target="1.8" />
     </bytecodeTargetLevel>
   </component>
