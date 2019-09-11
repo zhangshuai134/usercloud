@@ -6,14 +6,17 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 @RestController
-@RequestMapping("/user")
 public class UserController {
 
     @Autowired
     private RestTemplate restTemplate;
 
-    @RequestMapping("/getUserById")
-    public String getUserById(String id){
+    @RequestMapping("/test1")
+    public String test1(String id){
+        return restTemplate.getForObject("http://localhost:8001/user/getUserById?id="+id,String.class);
+    }
+    @RequestMapping("/test2")
+    public String test2(String id){
         return restTemplate.getForObject("http://localhost:8001/user/getUserById?id="+id,String.class);
     }
 }
