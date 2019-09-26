@@ -25,14 +25,15 @@ public class OrderService {
         System.out.println("发送异步事件,订单修改");
 
         //发送同步事件
-        Thread.sleep(500);
-        try {
-            System.out.println("发送同步事件,订单修改，开始");
-            eventBusCenter.postSync(new OrderChangeEvent(1L, 1L));
-            System.out.println("发送同步事件,订单修改，结束");
-        } catch (Exception e) {
-            log.error("发送同步事件,抓异常");
-        }
-
+//        Thread.sleep(500);
+//        try {
+//            System.out.println("发送同步事件,订单修改，开始");
+//            eventBusCenter.postSync(new OrderChangeEvent(1L, 1L));
+//            System.out.println("发送同步事件,订单修改，结束");
+//        } catch (Exception e) {
+//            log.error("发送同步事件,抓异常");
+//        }
+        eventBusCenter.postAsync(new Book(123));
+        System.out.println("Book 发送");
     }
 }

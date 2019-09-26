@@ -4,7 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/service01/service01.iml" filepath="$PROJECT_DIR$/service01/service01.iml" />
       <module fileurl="file://$PROJECT_DIR$/service02/service02.iml" filepath="$PROJECT_DIR$/service02/service02.iml" />
-      <module fileurl="file://$PROJECT_DIR$/service03/service03.iml" filepath="$PROJECT_DIR$/service03/service03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service03/service03-eventbus.iml" filepath="$PROJECT_DIR$/service03/service03-eventbus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service04-RateLimiter/service04-RateLimiter.iml" filepath="$PROJECT_DIR$/service04-RateLimiter/service04-RateLimiter.iml" />
       <module fileurl="file://$PROJECT_DIR$/usercloud.iml" filepath="$PROJECT_DIR$/usercloud.iml" />
     </modules>
   </component>

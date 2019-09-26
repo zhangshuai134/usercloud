@@ -15,16 +15,21 @@ import org.springframework.stereotype.Component;
 public class OrderChangeListener {
 
     @Subscribe
-    public void created(OrderCreatedEvent event) throws InterruptedException {
+    public void created111(OrderCreatedEvent event) throws InterruptedException {
         long orderId = event.getOrderId();
         Thread.sleep(300);
         log.info("订单创建监听,发送短信，orderId=" + orderId);
     }
 
     @Subscribe
-    public void change(OrderChangeEvent event) throws InterruptedException {
+    public void change222(OrderChangeEvent event) throws InterruptedException {
         long orderId = event.getOrderId();
         Thread.sleep(200);
         log.info("订单修改监听，物流变化，orderId=" + orderId);
+    }
+    @Subscribe
+    public void intaaa(Book book) throws InterruptedException {
+
+        log.info("========，int aa=" + book.getId());
     }
 }

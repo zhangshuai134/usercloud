@@ -12,6 +12,7 @@
         <module>service01</module>
         <module>service02</module>
         <module>service03</module>
+        <module>service04-RateLimiter</module>
     </modules>
 
     <parent>

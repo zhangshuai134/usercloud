@@ -8,13 +8,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="service01" />
         <module name="service02" />
-        <module name="service03" />
+        <module name="service03-eventbus" />
+        <module name="service04-RateLimiter" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="service01" target="1.8" />
       <module name="service02" target="1.8" />
-      <module name="service03" target="1.8" />
+      <module name="service03-eventbus" target="1.8" />
+      <module name="service04-RateLimiter" target="1.8" />
       <module name="usercloud" target="1.8" />
     </bytecodeTargetLevel>
   </component>
