@@ -1,6 +1,7 @@
 package com.zs3.demo;
 
 import com.zs3.demo.eventBus.OrderService;
+import com.zs3.demo.lua.TestLuaJ;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -19,10 +20,16 @@ public class FistRun implements CommandLineRunner {
 
     @Autowired
     private OrderService orderService;
+    @Autowired
+    private TestLuaJ testLuaJ;
 
     @Override
     public void run(String... args) throws Exception {
         log.info("FistRun start===============");
-        orderService.createOrder();
+//        orderService.createOrder();
+
+        testLuaJ.set();
+        testLuaJ.get();
+        testLuaJ.redisAddScriptExec();
     }
 }
