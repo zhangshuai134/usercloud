@@ -28,7 +28,7 @@
         <redis-client-version>2.9.0</redis-client-version>
         <kaptcha.version>2.3.2</kaptcha.version>
         <commons-lang3.version>3.8.1</commons-lang3.version>
-        <spring.shiro.version>1.4.0</spring.shiro.version>
+        <spring.shiro.version>1.7.1</spring.shiro.version>
         <shiro.redis.version>2.4.2.1-RELEASE</shiro.redis.version>
     </properties>
 
